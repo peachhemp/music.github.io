@@ -1,121 +1,42 @@
-<!DOCTYPE html>
-<!-- saved from url=(0130)https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&domain=school10kd -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Сайт-Шаблон</title>
-    <link href="./Сайт-Шаблон_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<style>
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: gray; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-}
-
-table {
- background: white; /* цвет фона */
- border: 1px black solid; /* стиль внешней рамки */
-}
-td {
- border: 1px black solid; /* стиль рамки ячеек */
- padding: 0.2em; 
- text-align: center;
-}
-th {
- background: #ffaaaa;
- border: 1px black solid; /* стиль рамки заголовков */
- padding: 0.2em; 
- width: 20%;
- text-align: center;
-</style>
-<script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-  </script>
-
-
-
-  </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="css/button.css" rel="stylesheet" type="text/css">
+    <script src="js/button.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/include-html.min.js"></script>
+</head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-secondary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#">ЭлЖур</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#center">Главная</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#table">Оценки</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Ссылки на официальные ресурсы
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://school10kd.eljur.ru/">Оригинальный ЭлЖур</a></li>
-            <li><a class="dropdown-item" href="https://vk.com/school10kld">МАОУ СОШ №10 в ВК</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#programmer">Ссылка на разработчика</a></li>
-          </ul>
-        </li>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
+    
+        <div include-html="header.html" id="header_file"></div>
+  
 <div class="container-fluid" style="margin-top: 10px;">
-    <div id="center" class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+
+    <div id="center" class="jumbotron p-3 p-md-5 text-white rounded bg-dark" style="background-color: white !important; border: 4px double black;">
         <div class="col-md-12 px-0">
-          <h1 class="display-4 font-italic">Тренировочный  ЭлЖур</h1>
-          <p class="lead my-3">На данном пробном сайте вы можете посмотреть оценки 11_А_У класса</p>
-          <p class="lead mb-0"><a href="https://school10kd.eljur.ru/" class="text-white font-weight-bold">Оригинальный ЭлЖур</a></p>
+          <h1 class="display-4 font-italic" align="center" style="color: black;">dkharlanov</h1>
+          <p class="lead my-3" align="center" style="color: black;">На данном пробном сайте вы можете 
+            ознакомится с основами Web-разработки, основами Python, а также подготовиться к ОГЭ-2023</p>
         </div>
       </div>
     </div>
-      <div class="container-fluid" style="margin-top: 10px;">
-<table id="table" class="table" style="border">
+    
+<!--<div class="container-fluid" style="margin-top: 10px;">
+<table id="table" class="table" style="width: 100%;">
   <thead>
     <tr style="background: grey;">
-      <td colspan="5" align="center"><b>11_А_У</b></td>
+      <td  colspan="5" align="center"><b>11_А_У</b></td>
     </tr>
     <tr>
       <th>Январь</th>
-      <th><div class="col-md-12">
+      <th><div class="col-md-12" >
       <div class="col-md" style="margin-right: 10px !important;">
- <a href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#baze_html" style=" text-decoration: none;">
-        <div class="page-main__links-item d-flex flex-column" style="padding: 1.5em; height: auto; line-height: 1.2em; background-color: lime; border-radius: 10px; border: 1px solid rgb(238, 238, 238); flex-direction: column !important; display: flex !important;" onmouseover="this.style.backgroundColor=&#39;#ADD5F0&#39;;" onmouseout="this.style.backgroundColor=&#39;lime&#39;;">
+ <a href="#baze_html" style=" text-decoration: none;">
+        <div class="page-main__links-item d-flex flex-column" style="padding: 1.5em; height: auto; line-height: 1.2em; background-color: lime; border-radius: 10px; border: 1px solid rgb(238, 238, 238); flex-direction: column !important; display: flex !important;" onmouseover="this.style.backgroundColor='#ADD5F0';" onmouseout="this.style.backgroundColor='lime';">
           <p style="margin: auto;">
  <b><span style="color: black;">
             Base_HTML</span> </b>
@@ -124,10 +45,10 @@ function topFunction() {
  </a>
       </div>
     </div></th>
-      <th><div class="col-md-12">
+      <th><div class="col-md-12" >
       <div class="col-md" style="margin-right: 10px !important;">
- <a href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#lesson_2" style=" text-decoration: none;">
-        <div class="page-main__links-item d-flex flex-column" style="padding: 1.5em; height: auto; line-height: 1.2em; background-color: lime; border-radius: 10px; border: 1px solid rgb(238, 238, 238); flex-direction: column !important; display: flex !important;" onmouseover="this.style.backgroundColor=&#39;#ADD5F0&#39;;" onmouseout="this.style.backgroundColor=&#39;lime&#39;;">
+ <a href="#lesson_2"  style=" text-decoration: none;">
+        <div class="page-main__links-item d-flex flex-column" style="padding: 1.5em; height: auto; line-height: 1.2em; background-color: lime; border-radius: 10px; border: 1px solid rgb(238, 238, 238); flex-direction: column !important; display: flex !important;" onmouseover="this.style.backgroundColor='#ADD5F0';" onmouseout="this.style.backgroundColor='lime';">
           <p style="margin: auto;">
  <b><span style="color: black;">
             Lesson_2</span> </b>
@@ -136,10 +57,10 @@ function topFunction() {
  </a>
       </div>
     </div></th>
-      <th><div class="col-md-12">
+      <th><div class="col-md-12" >
       <div class="col-md" style="margin-right: 10px !important;">
- <a href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#lesson_3" style=" text-decoration: none;">
-        <div class="page-main__links-item d-flex flex-column" style="padding: 1.5em; height: auto; line-height: 1.2em; background-color: lime; border-radius: 10px; border: 1px solid rgb(238, 238, 238); flex-direction: column !important; display: flex !important;" onmouseover="this.style.backgroundColor=&#39;#ADD5F0&#39;;" onmouseout="this.style.backgroundColor=&#39;lime&#39;;">
+ <a href="#lesson_3"  style=" text-decoration: none;">
+        <div class="page-main__links-item d-flex flex-column" style="padding: 1.5em; height: auto; line-height: 1.2em; background-color: lime; border-radius: 10px; border: 1px solid rgb(238, 238, 238); flex-direction: column !important; display: flex !important;" onmouseover="this.style.backgroundColor='#ADD5F0';" onmouseout="this.style.backgroundColor='lime';">
           <p style="margin: auto;">
  <b><span style="color: black;">
             Lesson_3</span> </b>
@@ -148,10 +69,10 @@ function topFunction() {
  </a>
       </div>
     </div></th>
-      <th><div class="col-md-12">
+      <th><div class="col-md-12" >
       <div class="col-md" style="margin-right: 10px !important;">
- <a href="https://storage11.eljur.ru/storage/6d8bd4c02da0480ce97bc68e372058a0?filename=%D1%87%D1%83%D0%BC%D0%B1%D0%B0.html&amp;domain=school10kd#lesson_today" style=" text-decoration: none;">
-        <div class="page-main__links-item d-flex flex-column" style="padding: 1.5em; height: auto; line-height: 1.2em; background-color: lime; border-radius: 10px; border: 1px solid rgb(238, 238, 238); flex-direction: column !important; display: flex !important;" onmouseover="this.style.backgroundColor=&#39;#ADD5F0&#39;;" onmouseout="this.style.backgroundColor=&#39;lime&#39;;">
+ <a href="#lesson_today"  style=" text-decoration: none;">
+        <div class="page-main__links-item d-flex flex-column" style="padding: 1.5em; height: auto; line-height: 1.2em; background-color: lime; border-radius: 10px; border: 1px solid rgb(238, 238, 238); flex-direction: column !important; display: flex !important;" onmouseover="this.style.backgroundColor='#ADD5F0';" onmouseout="this.style.backgroundColor='lime';">
           <p style="margin: auto;">
  <b><span style="color: black;">
             Lesson_Today</span> </b>
@@ -178,7 +99,7 @@ function topFunction() {
       <td></td>
     </tr>
         <tr>
-      <th>Овощ Артём</th>
+      <th>Дробышев Артём</th>
       <td></td>
       <td></td>
       <td></td>
@@ -199,7 +120,7 @@ function topFunction() {
       <td></td>
     </tr>
         <tr>
-      <th>Сасык Алла</th>
+      <th>Коноплева Алла</th>
       <td></td>
       <td></td>
       <td></td>
@@ -227,7 +148,7 @@ function topFunction() {
       <td></td>
     </tr>
         <tr>
-      <th><a href="file:///C:/Users/user/Desktop/site/index.html">Носаченко Роман</a><img src="./Сайт-Шаблон_files/Crocodile_Dundee_in_Los_Angeles.jpg" alt="лютотень"></th>
+      <th>Носаченко Роман</th>
       <td></td>
       <td></td>
       <td></td>
@@ -235,6 +156,7 @@ function topFunction() {
     </tr>
         <tr>
       <th>Табунов Тимофей</th>
+      <td></td>
       <td></td>
       <td></td>
       <td></td>
@@ -261,7 +183,7 @@ function topFunction() {
       <td></td>
     </tr>
         <tr>
-      <th>Ктотик Кирилл</th>
+      <th>Шкодич Кирилл</th>
       <td></td>
       <td></td>
       <td></td>
@@ -269,7 +191,8 @@ function topFunction() {
     </tr>
   </tbody>
 </table>
-</div>
+-->
+<!--</div>
   <div class="container-fluid" style="margin-top: 10px;">
     <div id="baze_html" class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-12 px-0">
@@ -305,16 +228,14 @@ function topFunction() {
           <p class="lead mb-0"><a href="https://school10kd.eljur.ru/" class="text-white font-weight-bold">Sublime_Text</a></p>
         </div>
       </div>
-    </div>
-
-
-<footer id="programmer" class="container">
-        <p>©2023 dkharlanov</p>
-      </footer>
-      <button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none;">В начало</button>
-
-
-
-    <script src="./Сайт-Шаблон_files/bootstrap.bundle.min.js.загрузка" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </div>-->   
   
-</body></html>
+    <div include-html="footer.html" id="footer_file"></div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">В начало</button>
+
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
