@@ -19,7 +19,7 @@
 }
 
 table {
- background: pink; /* цвет фона */
+ background: green; /* цвет фона */
  border: 1px black solid; /* стиль внешней рамки */
 }
 td {
